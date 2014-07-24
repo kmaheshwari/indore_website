@@ -1,0 +1,140 @@
+<html style="overflow:hidden;">
+<head>
+<style>
+#theManBt
+{
+position: absolute;
+top: 254px;
+left: 1022px;
+}
+#theMan {
+position: absolute;
+text-align: left;
+width: 305px;
+top: 254px;
+left: 1022px;
+}
+.sectionOverlay {
+display: none;
+text-align: left;
+z-index: 10000;
+}
+.sectionTitle {
+margin-bottom: -10px;
+}
+.close {
+background-image: url(../img/close.png);
+position: absolute;
+//right: 1px;
+top: 11px;
+cursor: pointer;
+width: 24px;
+height: 28px;
+}
+#theMan p {
+margin-top: 17px;
+margin-left: 15px;
+}
+p {
+display: block;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+}
+#whoAreTheKennedys {
+position: absolute;
+width: 350px;
+top: 200px;
+left: 423px;
+}
+#whoCanApply {
+position: absolute;
+width: 470px;
+bottom: 210px;
+left: 432px;
+}
+#ifYouAreSelected {
+position: absolute;
+width: 420px;
+bottom: 205px;
+left: 1026px;
+}
+#theProgram {
+position: absolute;
+top: 102px;
+left: 763px;
+width: 300px;
+}
+#formHolder {
+position: absolute;
+width: 940px;
+top: 150px;
+left: 349px;
+height: 700px;
+background-repeat: no-repeat;
+background-position: 140px 40px;
+}
+
+
+#warning {
+display: none;
+position: absolute;
+padding: 10px;
+left: 583px;
+top: 320px;
+width: 300px;
+color: #e1d62e;
+background-color: #000;
+filter: alpha(opacity=80);
+opacity: 0.9;
+z-index: 100010;
+}
+
+body {
+color: #fff;
+background-color: #000;
+background-image: url(../img/bg.gif);
+font-family: Arial, Verdana, sans-serif;
+line-height: 130%;
+}
+body {
+display: block;
+margin: 8px;
+}
+element.style {
+margin-left: 0px;
+background-position: -218px -190.5px;
+}
+.fb_reset {
+background: none;
+border: 0;
+border-spacing: 0;
+color: #000;
+cursor: auto;
+direction: ltr;
+font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+font-size: 11px;
+font-style: normal;
+font-variant: normal;
+font-weight: normal;
+letter-spacing: normal;
+line-height: 1;
+margin: 0;
+overflow: visible;
+padding: 0;
+text-align: left;
+text-decoration: none;
+text-indent: 0;
+text-shadow: none;
+text-transform: none;
+visibility: visible;
+white-space: normal;
+word-spacing: normal;
+}
+</style>
+</head>
+<body background="kennedys-black.gif">
+<img id="whoCanApply" src="photo.gif"/>
+</body>
+</html>

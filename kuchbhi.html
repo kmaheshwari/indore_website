@@ -1,0 +1,105 @@
+<html>
+<head>
+
+<style>
+a:hover {color:#FF00FF;}
+a:link {text-decoration:none;}    /* unvisited link */
+a:visited {text-decoration:none;} /* visited link */
+a:hover {text-decoration:underline;}   /* mouse over link */
+a:active {text-decoration:underline;}  /* selected link */
+
+
+body
+{
+background:url(t7.jpg);
+background-size:100% 50%;
+background-repeat:no-repeat;
+padding-top:40px;
+}
+
+
+h1 
+{text-shadow:2px 2px #FF0000;}
+h2 {text-shadow:2px 2px 8px #FF0000;}
+#h1
+{
+text-shadow:0 0 3px #FF0000;
+}
+
+p.small {font-variant:small-caps;}
+p.one 
+{
+border-style:solid;
+border-width:5px;
+border-radius:25px;
+box-shadow: 10px 10px 5px #888888;
+}
+
+ul
+{
+list-style-image: url('iips.jpg');
+}
+
+#grad1
+{
+height:200px;
+background: -webkit-linear-gradient(red, green, blue);
+}
+#grad
+{
+height:200px;
+background: -webkit-linear-gradient(left,rgba(255,0,0,0),rgba(255,0,0,1));
+}
+#grad2
+{
+height:200px;
+background: -webkit-radial-gradient(grey,white);
+}
+</style>
+
+<script>
+function changeImage()
+{
+element=document.getElementById("myimage")
+if (element.src.match("white_Star"))
+  {
+  element.src="golden_star.jpg";
+  }
+else
+  {
+  element.src="white_Star.jpg";
+  }
+}
+</script>
+</head>
+<body >
+<h1>dfhj</h1>
+<br><h2>fsdg</h2>
+<br><h1 id="h1"> fgdfyd </h1>
+<p class="small"> Sdfgik ijjh Fngj lkj </p>
+<p class="one"> dsfg vbnm kfduicgvmvijbkvcop </p>
+<a href=menu.html> menu </a>
+<br>
+<ul>
+<li> sdf </li>
+<li> hjk </LI>
+</ul><br>
+
+<h3>3 Color Stops (evenly spaced)</h3>
+<div id="grad"></div> <!--The last parameter in the rgba() function can be a value from 0 to 1, and it defines the transparency of t12:59 PM 04/11/2013he color: 0 indicates full transparency, 1 indicates full color (no transparency).-->
+<br>
+<div id="grad1"></div>
+<br>
+<div id="grad2"></div>
+
+
+
+
+
+<img id="myimage" onclick="changeImage()"
+src="white_Star.jpg" width="40" height="40">
+
+<p>Click the light star to turn on/off the light</p>
+
+</body>
+</html>

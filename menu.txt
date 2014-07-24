@@ -1,0 +1,42 @@
+#hr_top {
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+margin-top: -16px;
+}
+ol, ul {
+list-style: none;
+}
+p, ul, ol, dd, pre {
+margin-bottom: 20px;
+}
+#menu ul li {
+display: inline-block;
+padding-right: 20px;
+padding-top: 8px;
+}
+#menu {
+width: 800px;
+height: 35px;
+background: #000;
+margin-left: auto;
+margin-right: auto;
+margin-top: 5px;
+}
+#menu li {
+list-style-type: none;
+display: inline;
+padding-left: 30px;
+}
+li {
+//display: list-item;
+text-align: -webkit-match-parent;
+}
+#hr_bottom {
+position: relative;
+margin-top: -37px;
+}
+img {
+margin-top: .5px;
+border: 0px solid #ccc;
+}

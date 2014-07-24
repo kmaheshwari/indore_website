@@ -1,0 +1,107 @@
+<html>
+<head>
+<script>
+function leaptoIntro() {
+window.location="gallery.html"
+}
+function About() {
+alert("\nHave a suggestion for a JavaScript example?\n\nFill out the form and submit it. I will see what I can do.\n\nPlease be as specific as possible.");
+document.getElementById("name").focus();
+}
+function Reset() {
+document.getElementById("name").value = "";
+document.getElementById("brows").value = navigator.appName + " " + navigator.appVersion;
+document.getElementById("suggestions").value = "";
+document.getElementById("name").focus();
+}
+function submitForm() {
+if ( (isName() ) && (isBrowser()) && (isSuggestion()) ) {
+if (confirm("\nYour submission is about to be sent.\n\nClick YES to submit.\n\nClick NO to cancel."))
+return true
+else
+return false;
+}
+else
+return false;
+}
+function isName() {
+var str = document.getElementById("name").value;
+if (str == "") {
+alert("\nThe NAME field is blank.\n\nPlease enter your name.")
+document.getElementById("name").focus();
+return false;
+}
+for (var i = 0; i < str.length; i++) {
+var ch = str.substring(i, i + 1);
+if (((ch < "a" || "z" < ch) && (ch < "A" || "Z" < ch)) && ch != ' ') {
+alert("\nThe NAME field only accepts letters & spaces.\n\nPlease re-enter your name.");
+document.getElementById("name").select();
+document.getElementById("name").focus();
+return false;
+   }
+}
+return true;
+}
+1function isBrowser() {
+if (document.getElementById("brows").value != navigator.appName + " " + navigator.appVersion) {
+if (confirm("\nYou've changed your browser type.\n\nClick YES to keep changes.\n\nClick NO to restore detected browser."))
+return true
+else
+{
+document.getElementById("brows").value = navigator.appName + " " + navigator.appVersion;
+return true;
+   }
+}
+else
+return true;
+}
+function isSuggestion() {
+var str = document.getElementById("suggestions").value;
+if (str == "") {
+alert("\nThe SUGGESTION field is blank.\n\nPlease enter your suggestion.")
+document.getElementById("suggestions").focus();
+return false;
+}
+else
+return true
+}
+</script>
+</head>
+<BODY onLoad="Reset()">
+
+<CENTER>
+<h1>FEEDBACK FORM</h1>
+<FORM ENCTYPE="text/plain" NAME="test" METHOD='POST' ACTION='mailto:you@yourdomain.com?subject=JS Suggestions' onSubmit="return submitForm()">
+<INPUT TYPE="hidden" NAME="form1" VALUE="JS Suggestions">
+<TABLE BORDER=0 WIDTH=564>
+<TR>
+<TD align="center"> <FONT><STRONG>Enter your name:</STRONG></FONT>
+<TD align="center"> <FONT><STRONG>Browser/Version:</STRONG></FONT>
+</TR>
+<TR>
+<TD align="center"> <INPUT TYPE="text" NAME="name"   SIZE=26 MAXLENGTH=40>
+<TD align="center"> <INPUT TYPE="text" NAME="browser"   SIZE=26 MAXLENGTH=40>
+</TR>
+</TABLE>
+<BR>
+<TABLE BORDER=0>
+<TR>
+<TD align="center"> <FONT><STRONG>Enter your suggestion(s):</STRONG></FONT>
+</TR>
+<TR>
+<TD align="center"><TEXTAREA NAME="suggestions" ROWS=2 COLS=55 wrap=yes></TEXTAREA>
+</TR>
+</TABLE>
+<BR><BR>
+<TABLE BORDER=0 WIDTH=300>
+<TR>
+<TD align="center"><INPUT TYPE="submit" VALUE="Submit">
+<TD align="center"><INPUT TYPE="reset" VALUE="Reset" onClick="Reset()">
+<TD align="center"><INPUT TYPE="button" VALUE="About" onClick="About()">
+<TD align="center"><INPUT NAME="update" TYPE="BUTTON" VALUE="Close" OnClick="leaptoIntro()">
+</TR>
+</TABLE>
+</FORM>
+</CENTER>
+</body>
+</html>
